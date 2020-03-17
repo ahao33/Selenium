@@ -3,9 +3,9 @@
 <suite name="Default Suite">
   <test name="ahao">
     <classes>
-      <class name="com.one.Demotest1">
+      <class name="com.one.Demotest3">
         <methods>
-          <include name="testCase2"/>
+          <include name="openChorme"/>
         </methods>
       </class> <!-- com.one.Demotest6 -->
     </classes>
