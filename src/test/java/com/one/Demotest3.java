@@ -4,7 +4,9 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +16,7 @@ public class Demotest3 {
 
     @BeforeMethod  //在运行test前，会运行这个
     public  void  open(){
-        System.setProperty("webdriver.chrome.driver","/Users/ahao/Downloads/idea/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize(); //窗口最大化
     }
